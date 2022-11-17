@@ -5098,6 +5098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _selfButton: {fileID: 529195269}
+  _manaToTake: 20
 --- !u!1001 &619956288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5105,6 +5106,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2109865745}
     m_Modifications:
+    - target: {fileID: 2040740446083126504, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126504, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126504, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126504, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2040740447318903696, guid: accab6d1d0458604f94e918e368548b6, type: 3}
       propertyPath: m_Name
       value: Mana Bar

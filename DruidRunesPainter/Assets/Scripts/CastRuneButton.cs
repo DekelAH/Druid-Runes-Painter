@@ -1,8 +1,6 @@
-﻿#region Copy
-// This file is © 2022 Rumyancev Pavel <paulrumyancev@gmail.com>
-// Vector. School of Game development
-#endregion
+﻿
 
+using Assets.Scripts.Infastructure;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,12 +13,41 @@ namespace Runes
         [SerializeField]
         private Button _selfButton;
 
+        [SerializeField]
+        private float _manaToTake;
+
         #endregion
 
-        #region Functions
+        #region Methods
+
+        private void Start()
+        {
+            SubscribeToEvents();
+        }
+
+        private void OnDestroy()
+        {
+            UnsubscribeToEvents();
+        }
+
+        private void SubscribeToEvents()
+        {
+            PlayerModelProvider.Instance.Get.ManaAmountChanged += OnCheckManaAmount;
+        }
+
+        private void UnsubscribeToEvents()
+        {
+            PlayerModelProvider.Instance.Get.ManaAmountChanged -= OnCheckManaAmount;
+        }
+
+        private void OnCheckManaAmount(float manaAmount)
+        {
+            _selfButton.interactable = _manaToTake <= manaAmount;
+        }
 
         public void OnClick()
         {
+            PlayerModelProvider.Instance.Get.TakeMana(_manaToTake);
         }
 
         #endregion

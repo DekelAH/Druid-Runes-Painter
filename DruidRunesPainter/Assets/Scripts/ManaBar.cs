@@ -1,7 +1,5 @@
-﻿#region Copy
-// This file is © 2022 Rumyancev Pavel <paulrumyancev@gmail.com>
-// Vector. School of Game development
-#endregion
+﻿
+using Assets.Scripts.Infastructure;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,10 +11,42 @@ namespace Runes
 
         [SerializeField]
         private Image _manaFillImage;
-        
+
         #endregion
 
-        #region Functions
+        #region Methods
+
+        private void Start()
+        {
+            SetManaFillAmount();
+            SubscribeToEvents();
+        }
+
+        private void OnDestroy()
+        {
+            UnsubscribeToEvents();
+        }
+
+        private void SetManaFillAmount()
+        {
+            _manaFillImage.fillAmount = PlayerModelProvider.Instance.Get.ManaAmount / PlayerModelProvider.Instance.Get.MaxManaAmount;
+        }
+
+        private void SubscribeToEvents()
+        {
+            PlayerModelProvider.Instance.Get.ManaAmountChanged += UpdateManaBar;
+        }
+
+        private void UnsubscribeToEvents()
+        {
+            PlayerModelProvider.Instance.Get.ManaAmountChanged -= UpdateManaBar;
+        }
+
+        private void UpdateManaBar(float manaAmount)
+        {
+            _manaFillImage.fillAmount = manaAmount / PlayerModelProvider.Instance.Get.MaxManaAmount;
+        }
+
         #endregion
     }
 }
