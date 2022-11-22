@@ -1,6 +1,7 @@
 ﻿
 
 using Assets.Scripts.Infastructure;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,15 @@ namespace Runes
 
         [SerializeField]
         private float _manaToTake;
+
+        [SerializeField]
+        private DruidRunePainter _druidRunePainter;
+
+        #endregion
+
+        #region Fields
+
+        private bool _isPainting;
 
         #endregion
 
@@ -33,11 +43,23 @@ namespace Runes
         private void SubscribeToEvents()
         {
             PlayerModelProvider.Instance.Get.ManaAmountChanged += OnCheckManaAmount;
+            _druidRunePainter.BeginDraw += OnBeginDraw;
+            _druidRunePainter.EndDraw += OnEndDraw;
         }
 
         private void UnsubscribeToEvents()
         {
             PlayerModelProvider.Instance.Get.ManaAmountChanged -= OnCheckManaAmount;
+        }
+
+        private void OnEndDraw(bool isDrawing)
+        {
+            _isPainting = isDrawing;
+        }
+
+        private void OnBeginDraw(bool isDrawing)
+        {
+            _isPainting = isDrawing;
         }
 
         private void OnCheckManaAmount(float manaAmount)
@@ -47,7 +69,12 @@ namespace Runes
 
         public void OnClick()
         {
-            PlayerModelProvider.Instance.Get.TakeMana(_manaToTake);
+            if (!_isPainting)
+            {
+                PlayerModelProvider.Instance.Get.TakeMana(_manaToTake);
+
+                _druidRunePainter.Draw();
+            }
         }
 
         #endregion

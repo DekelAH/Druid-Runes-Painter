@@ -5099,6 +5099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _selfButton: {fileID: 529195269}
   _manaToTake: 20
+  _druidRunePainter: {fileID: 1430921160}
 --- !u!1001 &619956288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5334,7 +5335,7 @@ MonoBehaviour:
   - {fileID: 612559730351748657}
   - {fileID: 612559729874386538}
   _runeBrush: {fileID: 153723813}
-  _moveSpeed: 0.01
+  _moveSpeed: 0.1
 --- !u!1 &1742721112
 GameObject:
   m_ObjectHideFlags: 0
