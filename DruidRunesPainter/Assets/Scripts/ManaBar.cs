@@ -12,6 +12,9 @@ namespace Runes
         [SerializeField]
         private Image _manaFillImage;
 
+        [SerializeField]
+        private Text _manaText;
+
         #endregion
 
         #region Methods
@@ -30,6 +33,7 @@ namespace Runes
         private void SetManaFillAmount()
         {
             _manaFillImage.fillAmount = PlayerModelProvider.Instance.Get.ManaAmount / PlayerModelProvider.Instance.Get.MaxManaAmount;
+            _manaText.text = PlayerModelProvider.Instance.Get.ManaAmount.ToString();
         }
 
         private void SubscribeToEvents()
@@ -45,6 +49,7 @@ namespace Runes
         private void UpdateManaBar(float manaAmount)
         {
             _manaFillImage.fillAmount = manaAmount / PlayerModelProvider.Instance.Get.MaxManaAmount;
+            _manaText.text = manaAmount.ToString();
         }
 
         #endregion
