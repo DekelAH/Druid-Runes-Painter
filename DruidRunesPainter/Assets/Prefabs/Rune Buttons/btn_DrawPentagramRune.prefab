@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: -1973509937647142104}
   m_Layer: 5
   m_Name: btn_DrawPentagramRune
-  m_TagString: Untagged
+  m_TagString: Pentagram
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -223,4 +223,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _selfButton: {fileID: 6849651243903660571}
   _manaToTake: 30
-  _druidRunePainter: {fileID: 7206844761893055023, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
+  _runeDrawingArea: {fileID: 0}

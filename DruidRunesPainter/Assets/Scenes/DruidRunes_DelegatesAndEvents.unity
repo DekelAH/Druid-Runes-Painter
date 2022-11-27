@@ -123,11 +123,118 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &114738430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 114738431}
+  - component: {fileID: 114738432}
+  m_Layer: 0
+  m_Name: R > Heart Rune
+  m_TagString: Heart
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &114738431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114738430}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1574131034}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114738432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114738430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28493be87e56f1409a4e4fc44c320c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runeDrawPoints:
+  - {fileID: 612559729427916190}
+  - {fileID: 612559731026489265}
+  - {fileID: 612559729219236087}
+  - {fileID: 612559729441019593}
+  - {fileID: 612559730665873984}
+  - {fileID: 612559730324933150}
+  - {fileID: 612559729427916190}
+  _runeBrush: {fileID: 153723813}
+  _moveSpeed: 0.2
 --- !u!4 &153723813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6549410734076755920, guid: d222704b6bdde8040b264ce139c67ab7, type: 3}
   m_PrefabInstance: {fileID: 6549410734230461557}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &175246515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175246516}
+  - component: {fileID: 175246517}
+  m_Layer: 0
+  m_Name: R > Crown Rune
+  m_TagString: Crown
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &175246516
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175246515}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1574131034}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &175246517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175246515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28493be87e56f1409a4e4fc44c320c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runeDrawPoints:
+  - {fileID: 612559729874386538}
+  - {fileID: 612559730976329278}
+  - {fileID: 612559730039841799}
+  - {fileID: 612559730463613036}
+  - {fileID: 612559729434345950}
+  - {fileID: 612559730141103313}
+  - {fileID: 612559730669784831}
+  - {fileID: 612559729874386538}
+  _runeBrush: {fileID: 153723813}
+  _moveSpeed: 0.2
 --- !u!1001 &416795304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -396,7 +503,200 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &737980334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 737980336}
+  - component: {fileID: 737980335}
+  m_Layer: 0
+  m_Name: R > Pentagram Rune
+  m_TagString: Pentagram
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &737980335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737980334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28493be87e56f1409a4e4fc44c320c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runeDrawPoints:
+  - {fileID: 612559729874386538}
+  - {fileID: 612559729219236087}
+  - {fileID: 612559729434345950}
+  - {fileID: 612559730940028355}
+  - {fileID: 612559730351748657}
+  - {fileID: 612559729874386538}
+  _runeBrush: {fileID: 153723813}
+  _moveSpeed: 0.2
+--- !u!4 &737980336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737980334}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1574131034}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1244258651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1244258653}
+  - component: {fileID: 1244258652}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1244258652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244258651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1df129f13fdfdfc45844b48f4ad815cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _drawAreas:
+  - {fileID: 737980335}
+  - {fileID: 1737460316}
+  - {fileID: 175246517}
+  - {fileID: 114738432}
+  - {fileID: 1269833652}
+  _runeButtons:
+  - {fileID: -1973509937647142104, guid: 44145cbb35b79f8449947c1539117959, type: 3}
+  - {fileID: 40535054671797168, guid: 85bba43fafb32fc4aa700ac68da667ad, type: 3}
+  - {fileID: 1725952777549061350, guid: 72a128a0c5993a141bdfd341883cbe8c, type: 3}
+  - {fileID: -8536498269403081842, guid: bf88f19beebbeff43af00bc822a49a2c, type: 3}
+  - {fileID: 2683229305327543529, guid: d45b350ff9e96a74aa53514827942c60, type: 3}
+  _buttonAreaPosition: {fileID: 1666004100}
+--- !u!4 &1244258653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244258651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1269833650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1269833651}
+  - component: {fileID: 1269833652}
+  m_Layer: 0
+  m_Name: R > Triangle Rune
+  m_TagString: Triangle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1269833651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269833650}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1574131034}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1269833652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269833650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28493be87e56f1409a4e4fc44c320c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runeDrawPoints:
+  - {fileID: 612559729874386538}
+  - {fileID: 612559729219236087}
+  - {fileID: 612559729434345950}
+  - {fileID: 612559729874386538}
+  _runeBrush: {fileID: 153723813}
+  _moveSpeed: 0.2
+--- !u!1 &1574131033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1574131034}
+  m_Layer: 0
+  m_Name: Draw Runes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1574131034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574131033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 737980336}
+  - {fileID: 1737460315}
+  - {fileID: 175246516}
+  - {fileID: 114738431}
+  - {fileID: 1269833651}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1666004099
 GameObject:
@@ -408,7 +708,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1666004100}
   - component: {fileID: 1666004101}
-  - component: {fileID: 1666004102}
   m_Layer: 5
   m_Name: Rune Buttons
   m_TagString: Untagged
@@ -459,21 +758,59 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 4
---- !u!114 &1666004102
+--- !u!1 &1737460314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1737460315}
+  - component: {fileID: 1737460316}
+  m_Layer: 0
+  m_Name: R > Circle Rune
+  m_TagString: Circle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1737460315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737460314}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1574131034}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1737460316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666004099}
+  m_GameObject: {fileID: 1737460314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df129f13fdfdfc45844b48f4ad815cb, type: 3}
+  m_Script: {fileID: 11500000, guid: c28493be87e56f1409a4e4fc44c320c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _runeButtons:
-  - {fileID: -1973509937647142104, guid: 44145cbb35b79f8449947c1539117959, type: 3}
-  _selfPosition: {fileID: 1666004100}
+  _runeDrawPoints:
+  - {fileID: 612559730039841799}
+  - {fileID: 612559731026489265}
+  - {fileID: 612559730940028355}
+  - {fileID: 612559729219236087}
+  - {fileID: 612559730351748657}
+  - {fileID: 612559729441019593}
+  - {fileID: 612559730039841799}
+  _runeBrush: {fileID: 153723813}
+  _moveSpeed: 0.2
 --- !u!1 &1742721112
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +989,7 @@ RectTransform:
   - {fileID: 416795305}
   - {fileID: 1666004100}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1808,7 +2145,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6549410734076755920, guid: d222704b6bdde8040b264ce139c67ab7, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6549410734076755920, guid: d222704b6bdde8040b264ce139c67ab7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1856,91 +2193,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d222704b6bdde8040b264ce139c67ab7, type: 3}
---- !u!1001 &7206844763323971047
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7206844761893055008, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055008, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055008, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055008, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055008, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055008, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055008, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055008, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055008, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055008, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055008, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055009, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: m_Name
-      value: R > Pentagram Rune
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206844761893055023, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: _runeBrush
-      value: 
-      objectReference: {fileID: 153723813}
-    - target: {fileID: 7206844761893055023, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: _runeDrawPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 612559729874386538}
-    - target: {fileID: 7206844761893055023, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: _runeDrawPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 612559729219236087}
-    - target: {fileID: 7206844761893055023, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: _runeDrawPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 612559729434345950}
-    - target: {fileID: 7206844761893055023, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: _runeDrawPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 612559730940028355}
-    - target: {fileID: 7206844761893055023, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: _runeDrawPoints.Array.data[4]
-      value: 
-      objectReference: {fileID: 612559730351748657}
-    - target: {fileID: 7206844761893055023, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
-      propertyPath: _runeDrawPoints.Array.data[5]
-      value: 
-      objectReference: {fileID: 612559729874386538}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 81709838c426a4b4a9da2e48f2b331f1, type: 3}
 --- !u!1 &7463656568949919224
 GameObject:
   m_ObjectHideFlags: 0

@@ -87,9 +87,10 @@ GameObject:
   - component: {fileID: 6849651243903660572}
   - component: {fileID: 6849651243903660573}
   - component: {fileID: 6849651243903660571}
+  - component: {fileID: 2683229305327543529}
   m_Layer: 5
   m_Name: btn_DrawTriangleRune
-  m_TagString: Untagged
+  m_TagString: Triangle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,4 +196,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6849651243903660573}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2683229305327543529}
+        m_TargetAssemblyTypeName: Runes.CastRuneButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2683229305327543529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6849651243903660575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e0bcb466ac4884ae52ab8ee9e44bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _selfButton: {fileID: 6849651243903660571}
+  _manaToTake: 30
+  _runeDrawingArea: {fileID: 0}

@@ -18,7 +18,7 @@ namespace Runes
         private float _manaToTake;
 
         [SerializeField]
-        private DruidRunePainter _druidRunePainter;
+        private RuneDrawingArea _runeDrawingArea;
 
         #endregion
 
@@ -43,8 +43,8 @@ namespace Runes
         private void SubscribeToEvents()
         {
             PlayerModelProvider.Instance.Get.ManaAmountChanged += OnCheckManaAmount;
-            _druidRunePainter.BeginDraw += OnBeginDraw;
-            _druidRunePainter.EndDraw += OnEndDraw;
+            _runeDrawingArea.BeginDraw += OnBeginDraw;
+            _runeDrawingArea.EndDraw += OnEndDraw;
         }
 
         private void UnsubscribeToEvents()
@@ -67,13 +67,18 @@ namespace Runes
             _selfButton.interactable = _manaToTake <= manaAmount;
         }
 
+        public void SetRuneDrawingArea(RuneDrawingArea runeDrawingArea)
+        {
+            _runeDrawingArea = runeDrawingArea;
+        }
+
         public void OnClick()
         {
             if (!_isPainting)
             {
                 PlayerModelProvider.Instance.Get.TakeMana(_manaToTake);
 
-                _druidRunePainter.Draw();
+                _runeDrawingArea.Draw();
             }
         }
 
