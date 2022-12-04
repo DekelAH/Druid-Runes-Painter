@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &24411511 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2040740446083126504, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+  m_PrefabInstance: {fileID: 416795304}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &114738430
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +186,7 @@ MonoBehaviour:
   - {fileID: 612559730324933150}
   - {fileID: 612559729427916190}
   _runeBrush: {fileID: 153723813}
-  _moveSpeed: 0.2
+  _moveSpeed: 0.1
 --- !u!4 &153723813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6549410734076755920, guid: d222704b6bdde8040b264ce139c67ab7, type: 3}
@@ -242,6 +253,58 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2109865745}
     m_Modifications:
+    - target: {fileID: 1014027679, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_Name
+      value: Health Text Area
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075889096, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_Name
+      value: HealthAmountText
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126504, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126504, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 2040740446083126504, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_Color.a
+      value: 0.8156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126504, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_Color.b
+      value: 0.17123532
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126504, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.17123532
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126504, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126505, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 715.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126505, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 58.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126505, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -10.818
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126505, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040740446083126506, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+      propertyPath: m_Name
+      value: FillHealth
+      objectReference: {fileID: 0}
     - target: {fileID: 2040740447318903696, guid: accab6d1d0458604f94e918e368548b6, type: 3}
       propertyPath: m_Name
       value: Health Bar
@@ -330,7 +393,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6224375869112936466, guid: accab6d1d0458604f94e918e368548b6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: accab6d1d0458604f94e918e368548b6, type: 3}
 --- !u!224 &416795305 stripped
 RectTransform:
@@ -557,6 +621,36 @@ Transform:
   m_Father: {fileID: 1574131034}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &991246921 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1075889098, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+  m_PrefabInstance: {fileID: 416795304}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1098897767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2040740447318903696, guid: accab6d1d0458604f94e918e368548b6, type: 3}
+  m_PrefabInstance: {fileID: 416795304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1098897768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098897767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d824b42bef0924da21785b120c18cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthFillImage: {fileID: 24411511}
+  _healthText: {fileID: 991246921}
 --- !u!1 &1244258651
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,10 +687,10 @@ MonoBehaviour:
   - {fileID: 114738432}
   - {fileID: 1269833652}
   _runeButtons:
-  - {fileID: -1973509937647142104, guid: 44145cbb35b79f8449947c1539117959, type: 3}
+  - {fileID: 839535831299842419, guid: bf88f19beebbeff43af00bc822a49a2c, type: 3}
   - {fileID: 40535054671797168, guid: 85bba43fafb32fc4aa700ac68da667ad, type: 3}
   - {fileID: 1725952777549061350, guid: 72a128a0c5993a141bdfd341883cbe8c, type: 3}
-  - {fileID: -8536498269403081842, guid: bf88f19beebbeff43af00bc822a49a2c, type: 3}
+  - {fileID: 4003205400372027872, guid: 44145cbb35b79f8449947c1539117959, type: 3}
   - {fileID: 2683229305327543529, guid: d45b350ff9e96a74aa53514827942c60, type: 3}
   _buttonAreaPosition: {fileID: 1666004100}
 --- !u!4 &1244258653
@@ -1964,7 +2058,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7463656568949919224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4275802733864329157}

@@ -9,6 +9,7 @@ namespace Assets.Scripts.Models
         #region Events
 
         public event Action<float> ManaAmountChanged;
+        public event Action<float> HealthAmountChanged;
 
         #endregion
 
@@ -23,6 +24,9 @@ namespace Assets.Scripts.Models
 
         [SerializeField]
         private float _manaAmount;
+
+        [SerializeField]
+        private float _healthAmount;
 
         #endregion
 
@@ -40,11 +44,24 @@ namespace Assets.Scripts.Models
             ManaAmountChanged?.Invoke(_manaAmount);
         }
 
+        public void AddHealth(float healthToAdd)
+        {
+            _healthAmount = Mathf.Clamp(_healthAmount + healthToAdd, MIN_MANA, MAX_MANA);
+            HealthAmountChanged?.Invoke(_healthAmount);
+        }
+
+        public void TakeHealth(float healthToTake)
+        {
+            _healthAmount = Mathf.Max(0, _healthAmount - healthToTake);
+            HealthAmountChanged?.Invoke(_healthAmount);
+        }
+
         #endregion
 
         #region Properties
 
         public float ManaAmount => _manaAmount;
+        public float HealthAmount => _healthAmount;
         public float MaxManaAmount => MAX_MANA;
 
         #endregion

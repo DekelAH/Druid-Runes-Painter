@@ -1,4 +1,5 @@
-﻿using Runes;
+﻿using Assets.Scripts.Rune_Buttons;
+using Runes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +15,7 @@ namespace Assets.Scripts
 
         [Header("Button Area")]
         [SerializeField]
-        private CastRuneButton[] _runeButtons;
+        private CastRuneButtonBase[] _runeButtons;
 
         [SerializeField]
         private Transform _buttonAreaPosition;
@@ -28,7 +29,7 @@ namespace Assets.Scripts
             SpawnRuneButtons(_runeButtons, _drawAreas);
         }
 
-        private void SpawnRuneButtons(CastRuneButton[] runeButtons, RuneDrawingArea[] drawAreas)
+        private void SpawnRuneButtons(CastRuneButtonBase[] runeButtons, RuneDrawingArea[] drawAreas)
         {
             foreach (var runeBtn in runeButtons)
             {
@@ -36,7 +37,7 @@ namespace Assets.Scripts
                 {
                     if (runeBtn.CompareTag(runeDrawArea.tag))
                     {
-                        runeBtn.gameObject.GetComponent<CastRuneButton>();
+                        runeBtn.gameObject.GetComponent<CastRuneButtonBase>();
                         runeBtn.SetRuneDrawingArea(runeDrawArea);
                     }
                 }
