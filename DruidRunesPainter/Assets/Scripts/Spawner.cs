@@ -1,7 +1,6 @@
 ﻿using Assets.Scripts.Rune_Buttons;
-using Runes;
+using Assets.Scripts.Runes;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Assets.Scripts
 {
@@ -11,7 +10,7 @@ namespace Assets.Scripts
 
         [Header("Draw Area")]
         [SerializeField]
-        private RuneDrawingArea[] _drawAreas;
+        private RuneDrawingAreaBase[] _drawAreas;
 
         [Header("Button Area")]
         [SerializeField]
@@ -29,7 +28,7 @@ namespace Assets.Scripts
             SpawnRuneButtons(_runeButtons, _drawAreas);
         }
 
-        private void SpawnRuneButtons(CastRuneButtonBase[] runeButtons, RuneDrawingArea[] drawAreas)
+        private void SpawnRuneButtons(CastRuneButtonBase[] runeButtons, RuneDrawingAreaBase[] drawAreas)
         {
             foreach (var runeBtn in runeButtons)
             {

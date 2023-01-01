@@ -1,8 +1,7 @@
 ﻿
 
 using Assets.Scripts.Infastructure;
-using Runes;
-using System;
+using Assets.Scripts.Runes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,7 +18,7 @@ namespace Assets.Scripts.Rune_Buttons
         protected float _manaToTake;
 
         [SerializeField]
-        protected RuneDrawingArea _runeDrawingArea;
+        protected RuneDrawingAreaBase _runeDrawingArea;
 
         #endregion
 
@@ -68,7 +67,7 @@ namespace Assets.Scripts.Rune_Buttons
             _selfButton.interactable = _manaToTake <= manaAmount;
         }
 
-        public void SetRuneDrawingArea(RuneDrawingArea runeDrawingArea)
+        public void SetRuneDrawingArea(RuneDrawingAreaBase runeDrawingArea)
         {
             _runeDrawingArea = runeDrawingArea;
         }
