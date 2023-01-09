@@ -16,13 +16,10 @@ namespace Assets.Scripts.Rune_Buttons
 
         public override void OnClick()
         {
-            if (!_isPainting)
-            {
-                PlayerModelProvider.Instance.Get.TakeMana(_manaToTake);
-                PlayerModelProvider.Instance.Get.AddHealth(_healthToAdd);
+            PlayerModelProvider.Instance.Get.TakeMana(_manaToTake);
+            PlayerModelProvider.Instance.Get.AddHealth(_healthToAdd);
 
-                _runeDrawingArea.Draw();
-            }
+            _runeDrawingArea.Draw();
         }
 
         #endregion

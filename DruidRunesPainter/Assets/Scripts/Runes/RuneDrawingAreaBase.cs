@@ -10,8 +10,8 @@ namespace Assets.Scripts.Runes
     {
         #region Events
 
-        public event Action<bool> BeginDraw;
-        public event Action<bool> EndDraw;
+        public event Action BeginDraw;
+        public event Action EndDraw;
 
         #endregion
 
@@ -28,12 +28,6 @@ namespace Assets.Scripts.Runes
 
         #endregion
 
-        #region Fields
-
-        protected bool _isDrawing;
-
-        #endregion
-
         #region Methods
 
         public void Draw()
@@ -43,14 +37,14 @@ namespace Assets.Scripts.Runes
 
         protected abstract void DrawInternal();
 
-        protected void OnBeginDraw(bool isDrawing)
+        protected void OnBeginDraw()
         {
-            BeginDraw?.Invoke(isDrawing);
+            BeginDraw?.Invoke();
         }
 
-        protected void OnEndDraw(bool isDrawing)
+        protected void OnEndDraw()
         {
-            EndDraw?.Invoke(isDrawing);
+            EndDraw?.Invoke();
         }
 
         #endregion

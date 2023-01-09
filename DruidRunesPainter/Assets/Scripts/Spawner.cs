@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Rune_Buttons;
+﻿using Assets.Scripts.Infastructure;
+using Assets.Scripts.Rune_Buttons;
 using Assets.Scripts.Runes;
 using UnityEngine;
 
@@ -25,6 +26,7 @@ namespace Assets.Scripts
 
         private void Start()
         {
+            PlayerModelProvider.Instance.Get.ManaAmountChanged += OnManaAmountChanged;
             SpawnRuneButtons(_runeButtons, _drawAreas);
         }
 
@@ -34,15 +36,40 @@ namespace Assets.Scripts
             {
                 foreach (var runeDrawArea in drawAreas)
                 {
+
                     if (runeBtn.CompareTag(runeDrawArea.tag))
                     {
                         runeBtn.gameObject.GetComponent<CastRuneButtonBase>();
                         runeBtn.SetRuneDrawingArea(runeDrawArea);
+
+                        runeDrawArea.BeginDraw += OnBeginDraw;
+                        runeDrawArea.EndDraw += OnEndDraw;
                     }
                 }
 
                 Instantiate(runeBtn, _buttonAreaPosition);
             }
+        }
+
+        private void OnBeginDraw()
+        {
+            foreach (var runeBtn in _runeButtons)
+            {
+                runeBtn.SetButtonInteractable(false);
+            }
+        }
+
+        private void OnEndDraw()
+        {
+            foreach (var runeBtn in _runeButtons)
+            {
+                runeBtn.SetButtonInteractable(PlayerModelProvider.Instance.Get.ManaAmount >= runeBtn.ManaToTake);
+            }
+        }
+
+        private void OnManaAmountChanged(float mana)
+        {
+            OnEndDraw();
         }
 
         #endregion

@@ -31,9 +31,8 @@ namespace Assets.Scripts.Runes
                 var toPoint = _runePath.Pop();
                 StartCoroutine(RuneDrawing(fromPoint, toPoint, _runeBrush, _moveSpeed, DrawPointByPoint));
             }
-
-            _isDrawing = false;
-            OnEndDraw(_isDrawing);
+         
+            OnEndDraw();
         }
 
         private IEnumerator RuneDrawing(Vector3 currentPoint, Vector3 nextPoint, Transform runeBrushPosition, float inTime, Action drawPointByPointCallBack)
@@ -47,8 +46,7 @@ namespace Assets.Scripts.Runes
                 moveFactor = accTime / inTime;
                 accTime += Time.deltaTime;
 
-                _isDrawing = true;
-                OnBeginDraw(_isDrawing);
+                OnBeginDraw();
 
                 yield return null;
             }
